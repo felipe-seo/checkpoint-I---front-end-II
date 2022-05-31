@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint I - Front end II</title>
+    <script src ="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <form>
+        <h1>Player card generator</h1>
+        <label for="nome">Nome do jogador</label>
+        <input type="text" id="Nome" placeholder="Nome">
+        <label for="Equipe">Nome da equipe</label>
+        <input type="text" id="Equipe" placeholder="Nome da equipe">
+        <label for="Equipe" required>URL da imagem</label>
+        <input type="text" id="URL" placeholder="URL da imagem">
+        <button type="button" id="botao" onclick="test()">Enviar</button>
+    </form>
+    <div id="card" class="hidden">
+        <h1 id="card_title">Person's Name</h1>
+        <img id="image" class="hidden" src="https://i.ytimg.com/vi/U-C0I-Ks14M/maxresdefault.jpg" alt="You, looking gorgeous!">
+        <h2 id="card_team">x</h2>        
+    </div>
+</body>
+</html>
